@@ -51,5 +51,18 @@
     
     <script>
         <!-- Let's put our JS here for now -->
+        var locations = []
+        $.getJSON('https://crossorigin.me/https://maps.googleapis.com/maps/api/place/nearbysearch/json?location=33.640,-117.844&rankby=distance&types=food&key=AIzaSyDxXA4Pw4SSLK5JVPBnYLBNzgTQucxXICI',function(data) {
+            
+
+        for(var i = 0; i<data.results.length;i++)
+        {
+            console.log(data.results[i].name);
+            console.log(data.results[i].geometry.location.lat);
+            console.log(data.results[i].geometry.location.lng);
+            locations.push(data);
+        }
+        });
+
     </script>
 </html>
