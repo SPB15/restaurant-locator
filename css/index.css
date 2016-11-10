@@ -1,0 +1,23 @@
+@import url('https://fonts.googleapis.com/css?family=Fjalla+One');
+        body{
+            font-family: 'Fjalla One', Arial;
+            font-weight: bold;
+            position: relative
+            
+        }
+        
+        a{
+            text-decoration: none;
+        }
+        #title{
+            font-size:24px;
+            width:100%;
+            text-align:center;
+            margin-top:20px;
+            margin-bottom:30px;
+        }
+        
+        #author{ 
+            
+            background-color: lawngreen
+        }
