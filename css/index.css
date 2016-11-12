@@ -17,12 +17,21 @@ a{
     margin-top:20px;
     margin-bottom:30px;
 }
+
+#map {
+    height: 100%;
+}
         
 
 #new-location{position: relative;  width: auto; padding: 10px; text-align:center}
 #wrong-location{float: left;  width: 33.33% ;padding: auto;text-align:center}
-#search-something-to-drink{float: right;  width:33.33% ;padding: auto; text-align:center}
-#search-coffee{float: right;  width:33.33% ;padding: auto; text-align:center}
+
+#search-something-to-eat{float: right;  width:33.33% ;padding: auto; text-align:center}
+
+#search-coffee{float: right;  width:33.33% ;padding: 
+auto; text-align:center}
+
+
 #author{
     position: fixed;
     bottom: 0;

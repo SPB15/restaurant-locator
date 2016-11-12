@@ -16,7 +16,7 @@
         
         <div id = "new-location">NO, THAT PLACE LOOKS LIKE SHIT</div>
         <div id = "wrong-location">MY LOCATION IS FUCKING WRONG</div>
-        <div id = "search-something-to-drink">I'M FUCKING THIRSTY</div>
+        <div id = "search-something-to-eat">I'M FUCKING HUNGRY</div>
         <div id = "search-coffee">I NEED SOME FUCKING CAFFEINE</div>
         <div id = "author"><a href = https://github.com/mKausthub/restaurant-locator>Kausthub Raj Jadhav</a></div>
         
@@ -28,7 +28,6 @@
         var locations = []
         $.getJSON('https://crossorigin.me/https://maps.googleapis.com/maps/api/place/nearbysearch/json?location=33.640,-117.844&rankby=distance&types=food&key=AIzaSyDxXA4Pw4SSLK5JVPBnYLBNzgTQucxXICI',function(data) {
             
-
         for(var i = 0; i<data.results.length;i++)
         {
             console.log(data.results[i].name);
@@ -37,6 +36,5 @@
             locations.push(data);
         }
         });
-
     </script>
 </html>
