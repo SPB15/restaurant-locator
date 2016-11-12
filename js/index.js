@@ -12,9 +12,13 @@ $.getJSON('https://crossorigin.me/https://maps.googleapis.com/maps/api/place/nea
                             lng: data.results[i].geometry.location.lng
                            });
         }
+    
+    
 for(var i = 0; i<4;i++)
         {
     console.log('THE FUCKING DATA : ', locations[i].name, ' -- ', locations[i].lat, ' -- ', locations[i].lng, ' -- ' );
     
         }
+    
+    $('.results').html(String(locations[0].name));
 });

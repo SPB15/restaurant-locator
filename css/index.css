@@ -21,7 +21,15 @@ a{
 
 
 #title{
-    font-size:70px;
+    font-size:50px;
+    width:100%;
+    text-align:center;
+    margin-top:20px;
+    margin-bottom:30px;
+}
+
+#ouptut_string{
+    font-size:40px;
     width:100%;
     text-align:center;
     margin-top:20px;
@@ -33,6 +41,8 @@ a{
     width: 90%;
     margin: auto;
 }        
+
+
 
 #new-location{    
     font-size: 35px;
