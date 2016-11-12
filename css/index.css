@@ -1,16 +1,12 @@
 @import url('https://fonts.googleapis.com/css?family=Fjalla+One');
 
-#map {
-    height: 10%;
-    width: 90%;
-    margin: auto;
-    
-}
+
     
 html, body {
-    height: 50%;
+    height: 60%;
     margin: 0;
     padding: 0;
+    font:650%;
 }
 
 body{
@@ -23,6 +19,7 @@ a{
     text-decoration: none;
 }
 
+
 #title{
     font-size:24px;
     width:100%;
@@ -32,16 +29,36 @@ a{
 }
 
 #map {
-    height: 100%;}
-        
+    height: 100%;
+    width: 90%;
+    margin: auto;
+}        
 
-#new-location{position: relative;  width: auto; padding: 10px; text-align:center}
-#wrong-location{float: left;  width: 33.33% ;padding: auto;text-align:center}
+#new-location{    
+    position: absolute;
+    bottom: -150px;
+    left: 555px;
+    width: auto; 
+    padding: 10px; 
+    text-align:center}
 
-#search-something-to-eat{float: right;  width:33.33% ;padding: auto; text-align:center}
+#wrong-location{ 
+    position: absolute;
+    bottom: -170px;
+    left: 10px;
+    float: left;  width: 33.33% ;padding: auto;text-align:center}
 
-#search-coffee{float: right;  width:33.33% ;padding: 
-auto; text-align:center}
+#search-something-to-eat{
+    position: absolute;
+    bottom: -170px;
+    left: 450px;
+    float: right;  width:33.33% ;padding: auto; text-align:center}
+
+#search-coffee{
+    position: absolute;
+    bottom: -170px;
+    left: 850px;
+    float: right;  width:33.33% ;padding: auto; text-align:center}
 
 
 #author{
