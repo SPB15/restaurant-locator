@@ -1,23 +1,31 @@
 @import url('https://fonts.googleapis.com/css?family=Fjalla+One');
-        body{
-            font-family: 'Fjalla One', Arial;
-            font-weight: bold;
-            position: relative
-            
-        }
+
+body{
+    font-family: 'Fjalla One', Arial;
+    font-weight: bold;
+    position: relative
+    }
         
-        a{
-            text-decoration: none;
-        }
-        #title{
-            font-size:24px;
-            width:100%;
-            text-align:center;
-            margin-top:20px;
-            margin-bottom:30px;
-        }
+a{
+    text-decoration: none;
+}
+
+#title{
+    font-size:24px;
+    width:100%;
+    text-align:center;
+    margin-top:20px;
+    margin-bottom:30px;
+}
         
-        #author{ 
-            
-            background-color: lawngreen
-        }
+
+#new-location{float: left; padding: 30px}
+#wrong-location{float: left;padding: 30px}
+#search-something-to-drink{float: left;padding: 30px}
+#search-coffee{float: center;}
+#author{text-align:center;
+ background-color: lawngreen;
+    border-color: darkgreen
+        
+}
+
