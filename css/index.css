@@ -19,10 +19,10 @@ a{
 }
         
 
-#new-location{float: left; padding: 30px}
-#wrong-location{float: left;padding: 30px}
-#search-something-to-drink{float: left;padding: 30px}
-#search-coffee{float: center;}
+#new-location{float: left; padding: 10px}
+#wrong-location{float: left;padding: 10px}
+#search-something-to-drink{float: left;padding: 10px}
+#search-coffee{}
 #author{text-align:center;
  background-color: lawngreen;
     border-color: darkgreen
