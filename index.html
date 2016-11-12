@@ -23,25 +23,10 @@
         <div id = "search-coffee">I NEED SOME FUCKING CAFFEINE</div>
         <div id = "author"><a href = https://github.com/mKausthub/restaurant-locator>Kausthub Raj Jadhav</a></div>
         <div id="map"></div>
-        <script src="js/index.js"></script>
+        <script src="js/infoViewGoogleMaps.js"></script>
         <script async defer
         src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDxXA4Pw4SSLK5JVPBnYLBNzgTQucxXICI&callback=initMap"></script>
     </body>
-    
-    <script>
-        <!-- Let's put our JS here for now -->
-        
-        
-        var locations = []
-        $.getJSON('https://crossorigin.me/https://maps.googleapis.com/maps/api/place/nearbysearch/json?location=33.640,-117.844&rankby=distance&types=food&key=AIzaSyDxXA4Pw4SSLK5JVPBnYLBNzgTQucxXICI',function(data) {
-            
-        for(var i = 0; i<data.results.length;i++)
-        {
-            console.log(data.results[i].name);
-            console.log(data.results[i].geometry.location.lat);
-            console.log(data.results[i].geometry.location.lng);
-            locations.push(data);
-        }
-        });
-    </script>
+    <script src="js/index.js"></script>
+
 </html>
