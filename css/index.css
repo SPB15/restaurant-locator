@@ -1,5 +1,18 @@
 @import url('https://fonts.googleapis.com/css?family=Fjalla+One');
 
+#map {
+    height: 10%;
+    width: 90%;
+    margin: auto;
+    
+}
+    
+html, body {
+    height: 50%;
+    margin: 0;
+    padding: 0;
+}
+
 body{
     font-family: 'Fjalla One', Arial;
     font-weight: bold;
@@ -19,8 +32,7 @@ a{
 }
 
 #map {
-    height: 100%;
-}
+    height: 100%;}
         
 
 #new-location{position: relative;  width: auto; padding: 10px; text-align:center}
