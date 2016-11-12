@@ -19,12 +19,19 @@ a{
 }
         
 
-#new-location{float: left; padding: 10px}
-#wrong-location{float: left;padding: 10px}
-#search-something-to-drink{float: left;padding: 10px}
-#search-coffee{}
-#author{text-align:center;
- background-color: lawngreen;
+#new-location{position: relative;  width: auto; padding: 10px; text-align:center}
+#wrong-location{float: left;  width: 33.33% ;padding: auto;text-align:center}
+#search-something-to-drink{float: right;  width:33.33% ;padding: auto; text-align:center}
+#search-coffee{float: right;  width:33.33% ;padding: auto; text-align:center}
+#author{
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    padding: auto;
+    width: auto;
+    text-align:center;
+    background-color: lawngreen;
     border-color: darkgreen
         
 }
