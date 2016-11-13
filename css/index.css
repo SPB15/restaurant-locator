@@ -47,27 +47,27 @@ a{
 #new-location{    
     font-size: 35px;
     position: absolute;
-    bottom: -215px;
-    left: 460px;
+    bottom: -265x;
+    left: 500px;
     width: auto; 
     padding: 10px;
     text-align:center}
 
 #wrong-location{ 
     position: absolute;
-    bottom: -250px;
+    bottom: -330px;
     left: 10px;
     float: left;  width: 33.33% ;padding: auto;text-align:center}
 
 #search-something-to-eat{
     position: absolute;
-    bottom: -250px;
+    bottom: -330px;
     left: 450px;
     float: right;  width:33.33% ;padding: auto; text-align:center}
 
 #search-coffee{
     position: absolute;
-    bottom: -250px;
+    bottom: -330px;
     left: 850px;
     float: right;  width:33.33% ;padding: auto; text-align:center}
 

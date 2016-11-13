@@ -2,27 +2,31 @@
 <html>
     <head>
         <title>MyApp</title>
-        <!-- Any external file links, scripts/css go here -->
+        
         <link rel="stylesheet" type="text/css" href="css/index.css">
         <script
                 src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js">
         </script>
+
+        <script src="js/global.js" type="text/javascript"></script>
+        <script src="js/index.js" type="text/javascript"></script>
+
+        
     </head>
         
-    
     <body>
         <link href="https://afeld.github.io/emoji-css/emoji.css" rel="stylesheet">
         
-        <div id = "title"><i class="em em-fu"></i><u>FUCKING RESTAURANT LOCATOR</u><i class="em em-fu"></i></div>
+        <div id = "title"><i class="em em-ice_cream"></i><u>RESTAURANT LOCATOR</u><i class="em em-ice_cream"></i></div>
         
-        <div id = "ouptut_string">WHY DON'T YOU FUCKING GO TO <u><div class="results"></div></u></div>
+        <div id = "ouptut_string">WHY DON'T YOU GO TO <u><div class="results"></div></u></div>
 
         <div id="map"></div>
         
-        <div id = "new-location">NO, THAT PLACE LOOKS LIKE SHIT</div>
-        <div id = "wrong-location">MY LOCATION IS FUCKING WRONG</div>
-        <div id = "search-something-to-eat">I'M FUCKING HUNGRY</div>
-        <div id = "search-coffee">I NEED SOME FUCKING CAFFEINE</div>
+        <div id = "new-location">SHOW ME A NEW LOCATION </div>
+        <div id = "wrong-location">MY LOCATION IS  WRONG</div>
+        <div id = "search-something-to-eat">I'M HUNGRY</div>
+        <div id = "search-coffee">I NEED SOME CAFFEINE</div>
         
         <div id = "author"><a href = https://github.com/mKausthub/restaurant-locator>Kausthub Raj Jadhav</a></div>
         
@@ -30,6 +34,5 @@
         <script async defer
         src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDxXA4Pw4SSLK5JVPBnYLBNzgTQucxXICI&callback=initMap"></script>
     </body>
-    <script src="js/index.js"></script>
-
+     <script src="js/index.js"></script> 
 </html>
