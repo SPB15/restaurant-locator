@@ -54,7 +54,9 @@ a{
     left: 500px;
     width: auto; 
     padding: 10px;
-    text-align:center}
+    text-align:center;
+    margin-right: center;
+    margin-left: center;}
 
 #wrong-location{ 
     position: absolute;
