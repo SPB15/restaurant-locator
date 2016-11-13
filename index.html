@@ -70,7 +70,7 @@ function addMarker(location,content)
 
 var restaurants = [];
 
-$.getJSON('https://crossorigin.me/https://maps.googleapis.com/maps/api/place/nearbysearch/json?location=37.871,122.250&rankby=distance&types=food&key=AIzaSyALYuNn7DaTTN8IxpPprNtTl7USAUP3oc4', function(data) { 
+$.getJSON('https://crossorigin.me/https://maps.googleapis.com/maps/api/place/nearbysearch/json?location=37.871,-122.250&rankby=distance&types=food&key=AIzaSyALYuNn7DaTTN8IxpPprNtTl7USAUP3oc4', function(data) { 
 
 	for(var i = 0; i<data.results.length;i++)
 	{
@@ -89,7 +89,7 @@ $.getJSON('https://crossorigin.me/https://maps.googleapis.com/maps/api/place/nea
 });
 
 function initMap() {
-	var ucirvine = {lat: 37.871, lng: 122.250}; // lets give Google Maps the UCI location
+	var ucirvine = {lat: 37.871, lng: -122.250}; // lets give Google Maps the UCI location
 	map = new google.maps.Map(document.getElementById('map'), { 
 		zoom: 14, // i think zoom level 14 is pretty good (trial and error)
 		center: ucirvine // lets set the map center to uci
