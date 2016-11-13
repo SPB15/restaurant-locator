@@ -58,19 +58,19 @@ a{
 
 #wrong-location{ 
     position: absolute;
-    bottom: -330px;
+    bottom: -320px;
     left: 10px;
     float: left;  width: 33.33% ;padding: auto;text-align:center}
 
 #search-something-to-eat{
     position: absolute;
-    bottom: -330px;
+    bottom: -320px;
     left: 450px;
     float: right;  width:33.33% ;padding: auto; text-align:center}
 
 #search-coffee{
     position: absolute;
-    bottom: -330px;
+    bottom: -320px;
     left: 850px;
     float: right;  width:33.33% ;padding: auto; text-align:center}
 
