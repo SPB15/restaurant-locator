@@ -17,22 +17,96 @@
     <body>
         <link href="https://afeld.github.io/emoji-css/emoji.css" rel="stylesheet">
         
-        <div id = "title"><i class="em em-ice_cream"></i><u>RESTAURANT LOCATOR</u><i class="em em-ice_cream"></i></div>
+        <div id = "title"><i class="em em-fu"></i><u>FUCKING RESTAURANT LOCATOR</u><i class="em em-fu"></i></div>
         
-        <div id = "ouptut_string">WHY DON'T YOU GO TO <u><div class="results"></div></u></div>
+        <div id = "suggestion">WHY DON'T YOU GO TO FUCKING <u><div class="results"></div></u></div>
 
         <div id="map"></div>
         
-        <div id = "new-location">SHOW ME A NEW LOCATION </div>
-        <div id = "wrong-location">MY LOCATION IS  WRONG</div>
-        <div id = "search-something-to-eat">I'M HUNGRY</div>
-        <div id = "search-coffee">I NEED SOME CAFFEINE</div>
+        <div id = "new-location">NO, THAT PLACE LOOKS LIKE SHIT </div>
+        <div id = "wrong-location">MY LOCATION IS FUCKING WRONG</div>
+        <div id = "search-something-to-eat">I'M FUCKING HUNGRY</div>
+        <div id = "search-coffee">I NEED SOME FUCKING CAFFEINE</div>
         
-        <div id = "author"><a href = https://github.com/mKausthub/restaurant-locator>Kausthub Raj Jadhav</a></div>
+        <div id = "author"><a href = https://github.com/mKausthub>Kausthub Raj Jadhav</a></div>
         
         <script src="js/infoViewGoogleMaps.js"></script>
         <script async defer
         src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDxXA4Pw4SSLK5JVPBnYLBNzgTQucxXICI&callback=initMap"></script>
     </body>
-     <script src="js/index.js"></script> 
+
+    
+<script>
+var map;
+var markers = [];
+var infowindow;
+
+function getRandomInt(min, max) 
+{
+    return Math.floor(Math.random() * (max - min + 1)) + min;
+}
+
+function addMarker(location,content) 
+{
+	for (var i = 0; i < markers.length; i++)
+	{
+		markers[i].setMap(null); 
+    }
+	marker = new google.maps.Marker({ 
+		position: location, 
+		map: map, 
+	});
+	markers.push(marker); 
+
+	contentString = "<h3>"+content+"</h3>"; 
+	
+	infowindow = new google.maps.InfoWindow({
+		content: contentString 
+	});
+	marker.addListener('click', function() {
+		infowindow.open(map, marker); 
+	});
+}
+
+var restaurants = [];
+
+$.getJSON('https://crossorigin.me/https://maps.googleapis.com/maps/api/place/nearbysearch/json?location=33.640,-117.844&rankby=distance&types=food&key=AIzaSyALYuNn7DaTTN8IxpPprNtTl7USAUP3oc4', function(data) { 
+
+	for(var i = 0; i<data.results.length;i++)
+	{
+		var temp = []; 
+		temp.push(data.results[i].name); 
+		temp.push(data.results[i].geometry.location.lat); 
+		temp.push(data.results[i].geometry.location.lng); 
+		restaurants.push(temp); 
+	}
+	var randomNum = getRandomInt(0, restaurants.length-1) 
+	randomRestaurant = restaurants[randomNum]; 
+	restaurantLocation = new google.maps.LatLng(randomRestaurant[1], randomRestaurant[2]); 
+	console.log(randomRestaurant); 
+	addMarker(restaurantLocation, randomRestaurant[0]); 
+	$("#suggestion").html("WHY DON'T YOU GO TO FUCKING <u>"+randomRestaurant[0]+"</u>"); 
+});
+
+function initMap() {
+	var ucirvine = {lat: 33.640, lng: -117.844}; // lets give Google Maps the UCI location
+	map = new google.maps.Map(document.getElementById('map'), { 
+		zoom: 14, // i think zoom level 14 is pretty good (trial and error)
+		center: ucirvine // lets set the map center to uci
+	});
+}
+
+    
+$("#new-location").click(function(){
+	var randomNum = getRandomInt(0, restaurants.length-1)
+	var newRestaurant = restaurants[randomNum];
+	restaurantLocation = new google.maps.LatLng(newRestaurant[1], newRestaurant[2]); 
+	addMarker(restaurantLocation, newRestaurant[0]);
+	$("#suggestion").html("WHY DON'T YOU GO TO FUCKING <u>"+newRestaurant[0]+"</u>"); 
+});
+</script>
+<script async defer
+src="https://maps.googleapis.com/maps/api/js?key=AIzaSyALYuNn7DaTTN8IxpPprNtTl7USAUP3oc4&callback=initMap">
+</script>
+
 </html>

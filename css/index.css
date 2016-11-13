@@ -1,6 +1,10 @@
 @import url('https://fonts.googleapis.com/css?family=Fjalla+One');
 
 
+
+#new-location:hover, #wrong-location:hover, #search-something-to-eat:hover, #search-coffee:hover { 
+    font-size: 37px;
+}
     
 html, body {
     height: 60%;
@@ -28,7 +32,7 @@ a{
     margin-bottom:30px;
 }
 
-#ouptut_string{
+#suggestion{
     font-size:40px;
     width:100%;
     text-align:center;
@@ -41,7 +45,6 @@ a{
     width: 90%;
     margin: auto;
 }        
-
 
 
 #new-location{    
