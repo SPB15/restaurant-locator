@@ -49,14 +49,12 @@ a{
 
 #new-location{    
     font-size: 35px;
-    position: absolute;
     bottom: -265x;
     left: 450px;
     width: auto; 
     padding: 10px;
     text-align:center;
-    margin-right: center;
-    margin-left: center;}
+}
 
 #wrong-location{ 
     position: absolute;
